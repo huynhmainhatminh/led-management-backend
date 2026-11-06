@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@example.com",
+    "password": "Password@123",
+    "role": "admin",
+    "current_session_id": "db47a8e1-9b2e-416c-b967-27edfc0bf062",
+    "updatedAt": "2026-11-06T10:20:40Z"
+  },
+  {
+    "id": 2,
+    "username": "user1",
+    "email": "user1@example.com",
+    "password": "UserPass@123",
+    "role": "staff"
+  },
+  {
+    "id": 3,
+    "username": "test",
+    "email": "test@example.com",
+    "password": "TestPassword@2026",
+    "role": "staff"
+  },
+  {
+    "id": 4,
+    "username": "moderator",
+    "email": "moderator@example.com",
+    "password": "ModSecure!2026",
+    "role": "manage"
+  },
+  {
+    "id": 5,
+    "username": "john_doe",
+    "email": "john.doe@example.com",
+    "password": "JohnSecret#456",
+    "role": "staff"
+  },
+  {
+    "id": 6,
+    "username": "lead_manager",
+    "email": "lead.manager@example.com",
+    "password": "ManagePass$789",
+    "role": "manage"
+  }
+]

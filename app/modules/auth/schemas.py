@@ -1,5 +1,6 @@
-from pydantic import BaseModel, EmailStr
+# app/modules/auth/schemas.py
 from typing import Optional
+from pydantic import BaseModel, ConfigDict, EmailStr
 
 
 class UserBase(BaseModel):
@@ -9,6 +10,7 @@ class UserBase(BaseModel):
 
 class UserCreate(UserBase):
     password: str
+    role: str = "staff"
 
 
 class UserLogin(BaseModel):
@@ -18,11 +20,11 @@ class UserLogin(BaseModel):
 
 class UserResponse(UserBase):
     id: int
-    is_active: bool
-    is_superuser: bool
+    role: str = "staff"
+    is_active: bool = True
+    is_superuser: bool = False
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class Token(BaseModel):

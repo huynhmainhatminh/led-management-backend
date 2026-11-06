@@ -1,0 +1,299 @@
+[
+  {
+    "id": 1,
+    "code": "LED-NS-2121",
+    "name": "Chip LED RGB SMD2121",
+    "category": "LED_CHIP",
+    "brandId": 1,
+    "model": "SMD2121",
+    "unit": "1000 chiếc",
+    "unitPrice": 450000,
+    "specs": {
+      "package": "2121"
+    },
+    "description": null,
+    "status": "INACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T09:33:49Z"
+  },
+  {
+    "id": 2,
+    "code": "LED-KL-1515",
+    "name": "Chip LED RGB SMD1515",
+    "category": "LED_CHIP",
+    "brandId": 2,
+    "model": "SMD1515",
+    "unit": "1000 chiếc",
+    "unitPrice": 520000,
+    "specs": {
+      "package": "1515"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "code": "MOD-QJ-P25-IN",
+    "name": "Module LED P2.5 trong nhà 320x160",
+    "category": "LED_MODULE",
+    "brandId": 3,
+    "model": "P2.5-320x160",
+    "unit": "module",
+    "unitPrice": 185000,
+    "specs": {
+      "pixelPitch": 2.5,
+      "widthMm": 320,
+      "heightMm": 160,
+      "environment": "INDOOR"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "code": "MOD-AB-P39-OUT",
+    "name": "Module LED P3.91 ngoài trời 250x250",
+    "category": "LED_MODULE",
+    "brandId": 4,
+    "model": "P3.91-250x250",
+    "unit": "module",
+    "unitPrice": 420000,
+    "specs": {
+      "pixelPitch": 3.91,
+      "widthMm": 250,
+      "heightMm": 250,
+      "environment": "OUTDOOR"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "code": "MOD-UN-P2-IN",
+    "name": "Module LED P2 trong nhà 256x128",
+    "category": "LED_MODULE",
+    "brandId": 5,
+    "model": "P2-256x128",
+    "unit": "module",
+    "unitPrice": 210000,
+    "specs": {
+      "pixelPitch": 2,
+      "widthMm": 256,
+      "heightMm": 128,
+      "environment": "INDOOR"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "code": "MOD-LP-P4-OUT",
+    "name": "Module LED P4 ngoài trời 320x160",
+    "category": "LED_MODULE",
+    "brandId": 6,
+    "model": "P4-320x160",
+    "unit": "module",
+    "unitPrice": 330000,
+    "specs": {
+      "pixelPitch": 4,
+      "widthMm": 320,
+      "heightMm": 160,
+      "environment": "OUTDOOR"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "code": "MOD-CL-P5-OUT",
+    "name": "Module LED P5 ngoài trời 320x160",
+    "category": "LED_MODULE",
+    "brandId": 7,
+    "model": "P5-320x160",
+    "unit": "module",
+    "unitPrice": 290000,
+    "specs": {
+      "pixelPitch": 5,
+      "widthMm": 320,
+      "heightMm": 160,
+      "environment": "OUTDOOR"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "code": "SC-NV-MCTRL300",
+    "name": "Card phát NovaStar MCTRL300",
+    "category": "SENDING_CARD",
+    "brandId": 8,
+    "model": "MCTRL300",
+    "unit": "cái",
+    "unitPrice": 5200000,
+    "specs": {
+      "maxResolution": "1920x1200"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "code": "SC-LS-TS802D",
+    "name": "Card phát Linsn TS802D",
+    "category": "SENDING_CARD",
+    "brandId": 10,
+    "model": "TS802D",
+    "unit": "cái",
+    "unitPrice": 1800000,
+    "specs": {
+      "maxResolution": "1920x1080"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "code": "RC-NV-MRV336",
+    "name": "Card nhận NovaStar MRV336",
+    "category": "RECEIVING_CARD",
+    "brandId": 8,
+    "model": "MRV336",
+    "unit": "cái",
+    "unitPrice": 350000,
+    "specs": {
+      "portCount": 16
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "code": "RC-CL-5A75B",
+    "name": "Card nhận Colorlight 5A-75B",
+    "category": "RECEIVING_CARD",
+    "brandId": 9,
+    "model": "5A-75B",
+    "unit": "cái",
+    "unitPrice": 320000,
+    "specs": {
+      "portCount": 16
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "code": "VP-NV-VX4S",
+    "name": "Bộ xử lý hình ảnh NovaStar VX4S",
+    "category": "VIDEO_PROCESSOR",
+    "brandId": 8,
+    "model": "VX4S",
+    "unit": "bộ",
+    "unitPrice": 9500000,
+    "specs": {
+      "inputPorts": [
+        "HDMI",
+        "DVI"
+      ],
+      "maxResolution": "2.3M pixels"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "code": "PS-MW-LRS200-5",
+    "name": "Nguồn MEAN WELL LRS-200-5",
+    "category": "POWER_SUPPLY",
+    "brandId": 14,
+    "model": "LRS-200-5",
+    "unit": "cái",
+    "unitPrice": 480000,
+    "specs": {
+      "voltageV": 5,
+      "powerW": 200
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "code": "PS-GE-N200V5",
+    "name": "Nguồn G-Energy N200V5-A",
+    "category": "POWER_SUPPLY",
+    "brandId": 15,
+    "model": "N200V5-A",
+    "unit": "cái",
+    "unitPrice": 420000,
+    "specs": {
+      "voltageV": 5,
+      "powerW": 200
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "code": "CAB-AB-500X500",
+    "name": "Cabinet nhôm đúc 500x500 trong nhà",
+    "category": "CABINET",
+    "brandId": 4,
+    "model": "500x500-IN",
+    "unit": "cái",
+    "unitPrice": 1250000,
+    "specs": {
+      "widthMm": 500,
+      "heightMm": 500,
+      "material": "Nhôm đúc"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "code": "CAB-UN-960X960",
+    "name": "Cabinet ngoài trời 960x960",
+    "category": "CABINET",
+    "brandId": 5,
+    "model": "960x960-OUT",
+    "unit": "cái",
+    "unitPrice": 3600000,
+    "specs": {
+      "widthMm": 960,
+      "heightMm": 960,
+      "material": "Thép mạ kẽm"
+    },
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  }
+]

@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "code": "NATIONSTAR",
+    "name": "Nationstar",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 2,
+    "code": "KINGLIGHT",
+    "name": "Kinglight",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 3,
+    "code": "QIANGLI",
+    "name": "Qiangli Jucai",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 4,
+    "code": "ABSEN",
+    "name": "Absen",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 5,
+    "code": "UNILUMIN",
+    "name": "Unilumin",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 6,
+    "code": "LAMPRO",
+    "name": "LAMPRO",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 7,
+    "code": "CAILIANG",
+    "name": "Cailiang",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 8,
+    "code": "NOVASTAR",
+    "name": "NovaStar",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 9,
+    "code": "COLORLIGHT",
+    "name": "Colorlight",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 10,
+    "code": "LINSN",
+    "name": "Linsn",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 11,
+    "code": "HUIDU",
+    "name": "Huidu",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 12,
+    "code": "RGBLINK",
+    "name": "RGBlink",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 13,
+    "code": "VDWALL",
+    "name": "VDWall",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 14,
+    "code": "MEANWELL",
+    "name": "MEAN WELL",
+    "country": "Đài Loan",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 15,
+    "code": "GENERGY",
+    "name": "G-Energy",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 16,
+    "code": "CZCL",
+    "name": "CZCL",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T00:00:00Z",
+    "updatedAt": "2026-11-06T00:00:00Z"
+  },
+  {
+    "id": 17,
+    "code": "TEST",
+    "name": "Chaning_name",
+    "country": "VN",
+    "website": null,
+    "description": null,
+    "status": "ACTIVE",
+    "createdAt": "2026-11-06T06:09:17Z",
+    "updatedAt": "2026-11-06T06:12:17Z"
+  },
+  {
+    "id": 18,
+    "code": "TH1",
+    "name": "THUONGHIEU1",
+    "country": "Trung Quốc",
+    "website": null,
+    "description": null,
+    "status": "INACTIVE",
+    "createdAt": "2026-11-06T07:22:33Z",
+    "updatedAt": "2026-11-06T07:25:23Z"
+  }
+]
