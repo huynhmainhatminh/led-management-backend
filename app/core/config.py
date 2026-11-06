@@ -3,7 +3,7 @@ from functools import lru_cache
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "PC Management Backend"
+    PROJECT_NAME: str = "Led Management Backend"
     VERSION: str = "0.1.0"
     API_V1_STR: str = "/api/v1"
     
