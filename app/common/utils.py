@@ -13,6 +13,7 @@ async def make_http_request(url: str, method: str = "GET", **kwargs) -> dict:
         response.raise_for_status()
         return response.json()
 
+
 def paginate(items: list, page: int, size: int) -> dict:
     total = len(items)
     start = page * size
