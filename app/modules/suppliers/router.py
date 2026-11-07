@@ -1,14 +1,18 @@
 # app/modules/suppliers/router.py
 from typing import Optional
 from fastapi import APIRouter, Depends, Query, Request, Response
-
+from app.modules.auth.dependencies import get_current_active_user
 from app.common.response import SuccessResponse
 from app.modules.products.schemas import Category
 from app.modules.suppliers.schemas import BrandIn, BrandPatch, StatusFilter
 from app.modules.suppliers.service import BrandService
 
-router = APIRouter(prefix="/brands", tags=["Thương hiệu"])
-
+# router = APIRouter(prefix="/brands", tags=["Thương hiệu"])
+router = APIRouter(
+    prefix="/brands",
+    tags=["Thương hiệu"],
+    dependencies=[Depends(get_current_active_user)],  # Bảo vệ toàn bộ route Thương hiệu
+)
 
 def get_brand_service(request: Request) -> BrandService:
     return BrandService(

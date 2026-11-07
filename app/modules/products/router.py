@@ -72,15 +72,21 @@
 # app/modules/products/router.py
 from typing import Optional
 from fastapi import APIRouter, Depends, Query, Request, Response
-
+from app.modules.auth.dependencies import get_current_active_user
 from app.common.response import SuccessResponse
 from app.modules.products.service import ComponentService
 from app.modules.products.schemas import (
     CATEGORY_LABELS, Category, StatusFilter, ComponentIn, ComponentPatch
 )
 
-router = APIRouter(prefix="/components", tags=["Linh kiện"])
+# router = APIRouter(prefix="/components", tags=["Linh kiện"])
 
+
+router = APIRouter(
+    prefix="/components",
+    tags=["Linh kiện"],
+    dependencies=[Depends(get_current_active_user)],  # Bảo vệ toàn bộ route Linh kiện
+)
 
 # Dependency khởi tạo Service từ app.state
 def get_component_service(request: Request) -> ComponentService:
