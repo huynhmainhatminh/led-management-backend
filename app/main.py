@@ -3,6 +3,7 @@ import threading
 from pathlib import Path
 from typing import Optional
 
+
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
@@ -50,6 +51,7 @@ def create_app(data_dir: Optional[Path] = None) -> FastAPI:
     app.state.brands = JsonRepository(data_dir / "brands.json", lock)
     app.state.components = JsonRepository(data_dir / "components.json", lock)
     app.state.users = JsonRepository(data_dir / "users.json", lock)
+    app.state.project_orders = JsonRepository(data_dir / "project_orders.json", lock)
     @app.exception_handler(AppError)
     async def app_error_handler(_: Request, exc: AppError):
         return _error(
