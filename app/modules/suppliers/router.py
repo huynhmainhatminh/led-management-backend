@@ -1,7 +1,7 @@
 # app/modules/suppliers/router.py
 from typing import Optional
 from fastapi import APIRouter, Depends, Query, Request, Response
-from app.modules.auth.dependencies import get_current_active_user
+from app.modules.auth.dependencies import get_current_active_user, require_roles
 from app.common.response import SuccessResponse
 from app.modules.products.schemas import Category
 from app.modules.suppliers.schemas import BrandIn, BrandPatch, StatusFilter
@@ -13,6 +13,7 @@ router = APIRouter(
     tags=["Thương hiệu"],
     dependencies=[Depends(get_current_active_user)],  # Bảo vệ toàn bộ route Thương hiệu
 )
+
 
 def get_brand_service(request: Request) -> BrandService:
     return BrandService(
@@ -45,7 +46,13 @@ def get_brand(
     return SuccessResponse(data=service.get_brand(brand_id))
 
 
-@router.post("", status_code=201, summary="Thêm thương hiệu")
+# @router.post("", status_code=201, summary="Thêm thương hiệu")
+@router.post(
+    "",
+    status_code=201,
+    summary="Thêm thương hiệu",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def create_brand(
     body: BrandIn,
     service: BrandService = Depends(get_brand_service),
@@ -54,7 +61,12 @@ def create_brand(
     return SuccessResponse(data=record, message="Tạo thương hiệu thành công")
 
 
-@router.put("/{brand_id}", summary="Cập nhật toàn bộ thương hiệu")
+# @router.put("/{brand_id}", summary="Cập nhật toàn bộ thương hiệu")
+@router.put(
+    "/{brand_id}",
+    summary="Cập nhật toàn bộ thương hiệu",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def replace_brand(
     brand_id: int,
     body: BrandIn,
@@ -64,7 +76,12 @@ def replace_brand(
     return SuccessResponse(data=record, message="Cập nhật thương hiệu thành công")
 
 
-@router.patch("/{brand_id}", summary="Cập nhật một phần thương hiệu (kể cả status)")
+# @router.patch("/{brand_id}", summary="Cập nhật một phần thương hiệu (kể cả status)")
+@router.patch(
+    "/{brand_id}",
+    summary="Cập nhật một phần thương hiệu (kể cả status)",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def patch_brand(
     brand_id: int,
     body: BrandPatch,
@@ -74,7 +91,13 @@ def patch_brand(
     return SuccessResponse(data=record, message="Cập nhật thương hiệu thành công")
 
 
-@router.delete("/{brand_id}", status_code=204, summary="Xóa mềm thương hiệu")
+# @router.delete("/{brand_id}", status_code=204, summary="Xóa mềm thương hiệu")
+@router.delete(
+    "/{brand_id}",
+    status_code=204,
+    summary="Xóa mềm thương hiệu",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def delete_brand(
     brand_id: int,
     service: BrandService = Depends(get_brand_service),

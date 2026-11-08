@@ -72,7 +72,7 @@
 # app/modules/products/router.py
 from typing import Optional
 from fastapi import APIRouter, Depends, Query, Request, Response
-from app.modules.auth.dependencies import get_current_active_user
+from app.modules.auth.dependencies import get_current_active_user, require_roles
 from app.common.response import SuccessResponse
 from app.modules.products.service import ComponentService
 from app.modules.products.schemas import (
@@ -129,7 +129,13 @@ def get_component(
     return SuccessResponse(data=service.get_component(component_id))
 
 
-@router.post("", status_code=201, summary="Thêm linh kiện")
+# @router.post("", status_code=201, summary="Thêm linh kiện")
+@router.post(
+    "",
+    status_code=201,
+    summary="Thêm linh kiện",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def create_component(
     body: ComponentIn,
     service: ComponentService = Depends(get_component_service),
@@ -138,7 +144,12 @@ def create_component(
     return SuccessResponse(data=data, message="Tạo linh kiện thành công")
 
 
-@router.put("/{component_id}", summary="Cập nhật toàn bộ linh kiện")
+# @router.put("/{component_id}", summary="Cập nhật toàn bộ linh kiện")
+@router.put(
+    "/{component_id}",
+    summary="Cập nhật toàn bộ linh kiện",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def replace_component(
     component_id: int,
     body: ComponentIn,
@@ -148,7 +159,12 @@ def replace_component(
     return SuccessResponse(data=data, message="Cập nhật linh kiện thành công")
 
 
-@router.patch("/{component_id}", summary="Cập nhật một phần linh kiện (kể cả status, đơn giá)")
+# @router.patch("/{component_id}", summary="Cập nhật một phần linh kiện (kể cả status, đơn giá)")
+@router.patch(
+    "/{component_id}",
+    summary="Cập nhật một phần linh kiện (kể cả status, đơn giá)",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def patch_component(
     component_id: int,
     body: ComponentPatch,
@@ -158,7 +174,13 @@ def patch_component(
     return SuccessResponse(data=data, message="Cập nhật linh kiện thành công")
 
 
-@router.delete("/{component_id}", status_code=204, summary="Xóa mềm linh kiện")
+# @router.delete("/{component_id}", status_code=204, summary="Xóa mềm linh kiện")
+@router.delete(
+    "/{component_id}",
+    status_code=204,
+    summary="Xóa mềm linh kiện",
+    dependencies=[Depends(require_roles("admin", "manage"))],
+)
 def delete_component(
     component_id: int,
     service: ComponentService = Depends(get_component_service),

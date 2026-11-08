@@ -1,7 +1,7 @@
 # app/modules/auth/dependencies.py
 from fastapi import Depends, HTTPException, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
-
+from app.core.exceptions import AppError
 from app.core.security import decode_access_token
 from app.core.exceptions import CredentialsException
 from app.modules.auth.service import AuthService
@@ -47,3 +47,18 @@ async def get_current_active_user(current_user: dict = Depends(get_current_user)
     if not current_user.get("is_active", True):
         raise HTTPException(status_code=400, detail="Inactive user")
     return current_user
+
+
+def require_roles(*allowed_roles: str):
+    """Dependency kiểm tra role của user (ví dụ: require_roles('admin', 'manage'))"""
+    async def role_checker(current_user: dict = Depends(get_current_active_user)) -> dict:
+        user_role = current_user.get("role", "staff")
+        if user_role not in allowed_roles:
+            raise AppError(
+                403,
+                "FORBIDDEN",
+                f"Bạn không có quyền thực hiện thao tác này (Yêu cầu quyền: {', '.join(allowed_roles)})",
+            )
+        return current_user
+
+    return role_checker
